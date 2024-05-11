@@ -11,17 +11,17 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-sm container px-4 mx-auto flex justify-between items-center">
+    <div className="navbar bg-base-100 shadow-sm container px-10 mr-10 mx-auto flex justify-between items-center">
       <div className="flex items-center gap-2">
         <img className="w-auto h-7" src="" alt="" />
-        <span className="font-bold">FlavorFlow</span>
+        <span className="font-bold text-3xl text-[#FA7F08]">Flavor<span className="text-[#429198]">Flow</span></span>
       </div>
       <ul className="menu menu-horizontal flex gap-4">
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/allfoods">AllFoods</Link>
+          <Link to="/allfoods">All Foods</Link>
         </li>
         <li>
           <Link to="/gallery">Gallery</Link>

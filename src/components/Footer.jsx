@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
-    <footer className="bg-white shadow-sm">
+    <footer className="bg-[#91b1b4] shadow-sm ">
       <hr />
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
           <div className="flex gap-2 items-center">
             <img className="w-auto h-7" src="" alt="" />
-            <span>FlavorFlow</span>
+            <span className="text-black font-bold text-2xl">FlavorFlow</span>
           </div>
 
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
