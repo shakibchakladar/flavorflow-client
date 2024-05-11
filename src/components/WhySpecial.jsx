@@ -2,7 +2,7 @@ const WhySpecial = () => {
   return (
     <div>
       <div className="m-5 p-5 text-center space-y-5 my-7">
-        <h2 className="text-5xl font-bold ">Why is it special?</h2>
+        <h2 className="text-5xl font-bold font-poppins ">Why is it special?</h2>
         <p>
           Discover why FlevorFlow stands out as the pinnacle of dining
           excellence,
