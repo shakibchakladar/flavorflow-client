@@ -2,7 +2,7 @@ const OurChef = () => {
   return (
     <div className="text-center p-5 m-5 space-y-2">
       <h2 className="text-3xl font-poppins">Our Experts Chef</h2>
-      <p className="m-2 p-2">Lets introducing our exper chefs of FlavorFlow</p>
+      <p className="m-2 p-2">Lets introducing with our exper chefs of FlavorFlow</p>
       <div className="grid md:grid-cols-3 grid-cols-1 my-7 p-5 gap-7">
         <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
           <img

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const Navbar = () => {
@@ -11,27 +11,65 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-sm container px-10 mr-10 mx-auto flex justify-between items-center">
+    <div className="container fixed z-10 flex items-center justify-between px-10 py-5 mx-auto mb-20 mr-10 shadow-sm navbar bg-base-100">
       <div className="flex items-center gap-2">
         <img className="w-auto h-7" src="" alt="" />
-        <span className="font-bold text-3xl text-[#FA7F08]">Flavor<span className="text-[#429198]">Flow</span></span>
+        <span className="font-bold text-3xl text-[#FA7F08]">
+          Flavor<span className="text-[#429198]">Flow</span>
+        </span>
       </div>
-      <ul className="menu menu-horizontal flex gap-4">
+      <ul className="flex gap-4 menu menu-horizontal">
         <li>
-          <Link to="/">Home</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "border border-orange-600 btn text-primary font-bold"
+                : " btn font-bold"
+            }
+            to="/"
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/allfoods">All Foods</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "border border-orange-600 btn text-primary font-bold"
+                : " btn font-bold"
+            }
+            to="/allfood"
+          >
+            All Foods
+          </NavLink>
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "border border-orange-600 btn text-primary font-bold"
+                : " btn font-bold"
+            }
+            to="/gallery"
+          >
+            Gallery
+          </NavLink>
         </li>
       </ul>
       <div>
         {!user ? (
-          <Link to="/login">Login</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "border border-orange-600 btn text-primary font-bold"
+                : " btn font-bold"
+            }
+            to="/login"
+          >
+            Login
+          </NavLink>
         ) : (
-          <div className="dropdown dropdown-end z-50">
+          <div className="z-50 dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
@@ -52,7 +90,7 @@ const Navbar = () => {
               <li className="mt-2">
                 <button
                   onClick={handleLogOut}
-                  className="bg-gray-200 block text-center"
+                  className="block text-center bg-gray-200"
                 >
                   Logout
                 </button>

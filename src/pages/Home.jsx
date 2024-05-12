@@ -5,7 +5,7 @@ import WhySpecial from "../components/WhySpecial";
 
 const Home = () => {
     return (
-        <div>
+        <div className="">
             <Carousel></Carousel>
             <TopFood></TopFood>
             <WhySpecial></WhySpecial>

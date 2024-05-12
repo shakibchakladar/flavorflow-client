@@ -1,13 +1,13 @@
 const TopFood = () => {
   return (
     <div>
-      <div className="text-center p-15 m-10 space-y-5 ">
+      <div className="m-10 space-y-5 text-center p-15 ">
         <h2 className="text-5xl font-extrabold font-poppins text-[#FA7F08] ">
           Our Top Food
         </h2>
         <p>Here you can see our top testy foods collections</p>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-1 p-5">
+      <div className="grid grid-cols-1 p-5 md:grid-cols-3">
         <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
           <div
             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
