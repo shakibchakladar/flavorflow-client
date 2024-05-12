@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "border border-orange-600 btn text-primary font-bold"
+                ? "border bg-orange-600 btn text-primary font-bold"
                 : " btn font-bold"
             }
             to="/"
@@ -35,7 +35,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "border border-orange-600 btn text-primary font-bold"
+                ? "border bg-orange-600 btn text-primary font-bold"
                 : " btn font-bold"
             }
             to="/allfood"
@@ -47,7 +47,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "border border-orange-600 btn text-primary font-bold"
+                ? "border bg-orange-600 btn text-primary font-bold"
                 : " btn font-bold"
             }
             to="/gallery"
@@ -61,7 +61,7 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "border border-orange-600 btn text-primary font-bold"
+                ? "border bg-orange-600 btn text-primary font-bold"
                 : " btn font-bold"
             }
             to="/login"
