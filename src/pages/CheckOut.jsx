@@ -1,23 +1,58 @@
 import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import Swal from "sweetalert2";
+// import 'sweetalert2/src/sweetalert2.scss'
 
 const CheckOut = () => {
   const food = useLoaderData();
-  console.log(food);
-  const {user}=useContext(AuthContext)
+  const { _id, img } = food;
+  const { user } = useContext(AuthContext);
+  // console.log(user.email);
   const [buyingDate, setBuyingDate] = useState(new Date());
   const handlePurchase = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const currentTimestamp = Date.now();
     setBuyingDate(new Date(currentTimestamp));
-    const form=e.target;
-    const foodName=form.foodName.value;
-    const price=form.price.value;
-    const buyerName=form.buyerName.value;
-    const email=form.email.value;
-    const date=form.buyingDate.value;
-    console.log(foodName,price,buyerName,email,date);
+    const form = e.target;
+    const foodName = form.foodName.value;
+    const price = form.price.value;
+    const buyerName = form.buyerName.value;
+    // const email = form.email.value;
+    const date = form.buyingDate.value;
+
+    const purchase = {
+      buyerName: buyerName,
+      foodName: foodName,
+      food_id: _id,
+      email:user?.email,
+      date,
+      price,
+      img,
+    };
+    console.log(purchase);
+    fetch(`${import.meta.env.VITE_API_URL}/purchase`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(purchase),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if(data.insertedId){
+          Swal.fire({
+            title: 'success!',
+            text: 'succesfully perchase',
+            icon: 'success',
+            confirmButtonText: 'ok'
+          })
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   };
 
   return (
@@ -69,10 +104,10 @@ const CheckOut = () => {
           </label>
           <input
             type="email"
-              defaultValue={user?.email}
+            defaultValue={user?.email}
             placeholder="email"
             name="email"
-            readOnly 
+            readOnly
             className="input input-bordered"
             required
           />
@@ -90,9 +125,9 @@ const CheckOut = () => {
             required
           />
         </div>
-        
+
         <div className="mt-6 form-control">
-          <input 
+          <input
             className="text-white bg-orange-700 btn btn-block"
             type="submit"
             value="Purchage Confirm"
