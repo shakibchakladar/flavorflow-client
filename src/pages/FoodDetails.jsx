@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const FoodDetails = () => {
@@ -75,7 +75,7 @@ const FoodDetails = () => {
           </div>
         </div>
       </div>
-      <button className="ml-[520px] p-2 m-5 btn bg-[#ae461d] border-none text-fuchsia-100">Purchage</button>
+     <Link to={`/checkout/${food?._id}`}> <button className="ml-[520px] p-2 m-5 btn bg-[#ae461d] border-none text-fuchsia-100">Purchage</button></Link>
     </div>
    </div>
   );

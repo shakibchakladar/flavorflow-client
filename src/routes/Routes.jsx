@@ -7,6 +7,7 @@ import ErrorPage from "../pages/ErrorPage";
 import AllFood from "../pages/AllFood";
 import Gallery from "../pages/Gallery";
 import FoodDetails from "../pages/FoodDetails";
+import CheckOut from "../pages/CheckOut";
 // import PrivateRoutes from "../components/PrivateRoutes";
 // import FoodDetails from "../pages/FoodDetails";
 
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
       {
         path:"/details/:id",
         element:<FoodDetails></FoodDetails>
+      },
+      {
+        path:"/checkout/:id",
+        element:<CheckOut></CheckOut>,
+        loader:({params})=>fetch(`http://localhost:5000/singleFood/${params.id}`)
       }
     
     ],
