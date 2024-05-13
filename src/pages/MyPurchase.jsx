@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 const MyPurchase = () => {
   const { user } = useContext(AuthContext);
   const [purchase, setPurchase] = useState([]);
-  const url = `http://localhost:5000/purchase?email=${user?.email}`;
+  const url = `${import.meta.env.VITE_API_URL}/purchase?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

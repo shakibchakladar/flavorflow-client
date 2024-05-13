@@ -2,7 +2,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 const img1="https://i.ibb.co/48r3y6W/davide-cantelli-jpkfc5-d-DI-unsplash.jpg"
 const img2="https://i.ibb.co/KL6GsHh/carissa-gan-0-Jpjeqt-Syg-unsplash.jpg"
-const img3="https://i.ibb.co/X2h9K0k/istockphoto-1158778695-1024x1024.jpg"
+const img3="https://i.ibb.co/yByzwyz/stir-fried-kale-spicy-crispy-pork-wooden-table-thai-food-concept.jpg"
+const text1='Present Your Healthful Resturant Food'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
