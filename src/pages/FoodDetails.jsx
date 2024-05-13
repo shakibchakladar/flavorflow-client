@@ -13,7 +13,7 @@ const FoodDetails = () => {
       .then((res) => res.json())
       .then((data) => {
         setFood(data);
-        console.log(data);
+        // console.log(data);
       });
   }, [id]);
   return (

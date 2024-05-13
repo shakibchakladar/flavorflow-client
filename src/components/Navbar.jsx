@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const Navbar = () => {
@@ -99,7 +99,7 @@ const Navbar = () => {
               </li>
               <li className="mt-2">
                 <button className="block text-center bg-gray-200">
-                  My ordered food
+                  <Link to="/mypurchase">My ordered food</Link>
                 </button>
               </li>
               <li className="mt-2">
