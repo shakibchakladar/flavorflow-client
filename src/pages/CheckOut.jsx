@@ -58,6 +58,7 @@ const CheckOut = () => {
             type="text"
             placeholder="buyerName"
             name="buyerName"
+            readOnly
             className="input input-bordered"
             required
           />
@@ -71,6 +72,7 @@ const CheckOut = () => {
               defaultValue={user?.email}
             placeholder="email"
             name="email"
+            readOnly 
             className="input input-bordered"
             required
           />
