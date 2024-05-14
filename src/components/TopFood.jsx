@@ -13,13 +13,13 @@ const TopFood = () => {
             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+                "url(https://i.ibb.co/PF51XPV/slice-crispy-pizza-with-meat-cheese.jpg)",
             }}
           ></div>
 
           <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
             <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
-              Nike Revolt
+              Yammi pizza
             </h3>
 
             <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
@@ -37,13 +37,13 @@ const TopFood = () => {
             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+                "url(https://i.ibb.co/Jd09G5g/still-life-delicious-american-hamburger.jpg)",
             }}
           ></div>
 
           <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
             <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
-              Nike Revolt
+              Hot burger 
             </h3>
 
             <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
@@ -61,13 +61,13 @@ const TopFood = () => {
             className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
             style={{
               backgroundImage:
-                "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+                "url(https://i.ibb.co/qRh1CXH/umesh-soni-LDnmy-Oa-A-ew-unsplash.jpg)",
             }}
           ></div>
 
           <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
             <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">
-              Nike Revolt
+              Chocolate cake
             </h3>
 
             <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">

@@ -89,12 +89,12 @@ const Navbar = () => {
             >
               <li className="mt-2">
                 <button className="block text-center bg-gray-200">
-                  My added food items
+                  <Link to="/myaddedfood">My added food items</Link>
                 </button>
               </li>
               <li className="mt-2">
                 <button className="block text-center bg-gray-200">
-                  Add food item
+                  <Link to="/addfood">Add food item</Link>
                 </button>
               </li>
               <li className="mt-2">

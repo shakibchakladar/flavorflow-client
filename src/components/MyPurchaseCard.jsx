@@ -1,7 +1,7 @@
 
 const MyPurchaseCard = ({ purchaseItem, handleDelete }) => {
-  // console.log(purchaseItem);
-  const { img, price, date, _id } = purchaseItem;
+  console.log(purchaseItem);
+  const { img, price, date, _id,foodName } = purchaseItem;
 
   return (
     <div className="flex max-w-md p-5 overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
@@ -14,7 +14,7 @@ const MyPurchaseCard = ({ purchaseItem, handleDelete }) => {
 
       <div className="w-2/3 p-4 md:p-4">
         <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-          Backpack
+          {foodName}
         </h1>
 
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">

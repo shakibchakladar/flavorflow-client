@@ -10,6 +10,8 @@ import FoodDetails from "../pages/FoodDetails";
 import CheckOut from "../pages/CheckOut";
 import MyPurchase from "../pages/MyPurchase";
 import PrivateRoutes from "../components/PrivateRoutes";
+import AddFood from "../pages/AddFood";
+import MyAddedFood from "../pages/MyAddedFood";
 // import PrivateRoutes from "../components/PrivateRoutes";
 // import FoodDetails from "../pages/FoodDetails";
 
@@ -55,6 +57,22 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoutes>
             <MyPurchase></MyPurchase>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/addfood",
+        element: (
+          <PrivateRoutes>
+            <AddFood></AddFood>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/myaddedfood",
+        element: (
+          <PrivateRoutes>
+            <MyAddedFood></MyAddedFood>
           </PrivateRoutes>
         ),
       },
