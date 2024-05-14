@@ -1,8 +1,17 @@
-# React + Vite
+# Flavor Flow - Restaurant Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site URL:** [Flavor Flow - Restaurant Management System](https://flavorflow-6eaef.web.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Features:**
+
+- **Table Reservation:** Enable customers to reserve tables online, providing convenience and improving customer satisfaction.
+  
+- **Menu Management:** Effortlessly update menus with new dishes, prices, and special promotions, ensuring accurate and up-to-date information for customers.
+  
+- **Order Tracking:** Track orders from the moment they are placed to delivery or pickup, facilitating efficient order management and reducing errors.
+  
+- **Inventory Management:** Monitor inventory levels in real-time, receive alerts for low stock items, and streamline procurement processes to ensure seamless operations.
+  
+- **Employee Scheduling:** Simplify employee scheduling, assign shifts, and manage staff availability to optimize coverage and enhance productivity.
