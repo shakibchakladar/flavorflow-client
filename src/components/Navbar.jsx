@@ -11,14 +11,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container fixed z-10 flex items-center justify-between px-10 py-5 mx-auto mb-20 mr-10 shadow-sm navbar bg-base-100">
+    <div className="container z-10 items-center justify-between px-10 py-5 mx-auto mb-20 mr-10 shadow-sm md:fixed md:flex navbar bg-base-100">
       <div className="flex items-center gap-2">
         <img className="w-auto h-7" src="" alt="" />
         <span className="font-bold text-3xl text-[#FA7F08]">
           Flavor<span className="text-[#429198]">Flow</span>
         </span>
       </div>
-      <ul className="flex gap-4 menu menu-horizontal">
+      <ul className="hidden gap-4 md:flex menu menu-horizontal">
         <li>
           <NavLink
             className={({ isActive }) =>

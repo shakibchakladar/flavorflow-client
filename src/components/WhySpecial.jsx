@@ -1,7 +1,7 @@
 const WhySpecial = () => {
   return (
     <div>
-      <div className="m-5 p-5 text-center space-y-5 my-7">
+      <div className="p-5 m-5 space-y-5 text-center my-7">
         <h2 className="text-5xl font-bold font-poppins ">Why is it special?</h2>
         <p>
           Discover why FlevorFlow stands out as the pinnacle of dining
@@ -11,16 +11,16 @@ const WhySpecial = () => {
         </p>
       </div>
       <div className="hero min-h-[800px] bg-base-200 p-10">
-        <div className="hero-content flex-col lg:flex-row gap-x-8 justify-between">
-          <div className="w-1/2">
+        <div className="flex-col justify-between hero-content lg:flex-row gap-x-8">
+          <div className="md:w-1/2">
             <img
               src="https://i.ibb.co/vHcft5h/victoria-shes-UC0-HZd-Uit-WY-unsplash.jpg"
-              className=" w-full rounded-lg shadow-2xl"
+              className="w-full rounded-lg shadow-2xl "
             />
           </div>
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <h1 className="text-3xl font-bold font-poppins text-[#FA7F08]">What We offer</h1>
-            <p className="p-5">
+            <p className="md:p-5">
               At FlavorFlow, we understand that dining is more than just a meal;
               its an experience. As your premier destination for culinary
               excellence, we pride ourselves on offering more than just
@@ -37,17 +37,17 @@ const WhySpecial = () => {
             </p>
             <div className="py-3 space-y-5">
               <ul className="space-y-5">
-                <li className="list-disc text-xl font-semibold">
+                <li className="text-xl font-semibold list-disc">
                   Culinary Excellence: Immerse yourself in a world of exquisite
                   flavors crafted by our talented chefs using the freshest,
                   highest-quality ingredients.
                 </li>
-                <li className="list-disc text-xl font-semibold">
+                <li className="text-xl font-semibold list-disc">
                   Memorable Experiences: From our inviting ambiance to our
                   attentive service, we go above and beyond to create
                   unforgettable moments for every guest.
                 </li>
-                <li className="list-disc text-xl font-semibold">
+                <li className="text-xl font-semibold list-disc">
                   Innovation and Creativity: Explore a menu inspired by culinary
                   innovation, where traditional favorites meet bold new flavors
                   for a dining experience like no other.
