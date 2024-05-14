@@ -1,8 +1,27 @@
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 import FoodCard from "../components/FoodCard";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const AllFood = () => {
-  const foods = useLoaderData();
+  // const foods = useLoaderData();
+  const [foods, setFoods] = useState([]);
+  const [records, setRecods] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${import.meta.env.VITE_API_URL}/foods`)
+      .then((res) =>{ 
+        setFoods(res.data)
+        setRecods(res.data)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  const Filter = (event) => {
+    setRecods(foods.filter(f => f?.name.toLowerCase().includes(event.target.value.toLowerCase())));
+  };
+  
   return (
     <div className="pt-10">
       <div>
@@ -24,7 +43,7 @@ const AllFood = () => {
                 <label htmlFor="Search" className="hidden">
                   Search
                 </label>
-                <div className="relative">
+                {/* <div className="relative">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button
                       type="button"
@@ -46,15 +65,22 @@ const AllFood = () => {
                     placeholder="Search..."
                     className="w-32 py-2 pl-10 text-sm text-gray-100 bg-gray-800 rounded-md sm:w-auto focus:outline-none dark:bg-gray-100 dark:text-gray-800 focus:bg-gray-900 focus:dark:bg-gray-50 focus:border-violet-400 focus:dark:border-violet-600"
                   />
-                </div>
+                </div> */}
               </fieldset>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-        {foods?.map((food) => (
+      <div className="p-10 m-2 text-center">
+        <input
+        onChange={Filter}
+          type="text"
+          placeholder="search here"
+          className="w-full max-w-xs input input-bordered input-primary"
+        />
+      </div>
+      <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-3">
+        {records?.map((food) => (
           <FoodCard key={food._id} food={food}></FoodCard>
         ))}
       </div>

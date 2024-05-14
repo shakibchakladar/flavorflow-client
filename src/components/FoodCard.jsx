@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const FoodCard = ({food}) => {
-    const {name,img,category,price,quantity,_id}=food;
+    const {name,img,category,price}=food;
     // console.log(food._id);
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">

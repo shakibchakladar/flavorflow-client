@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
+
 const Gallery = () => {
+  const {user}=useContext(AuthContext)
   return (
     <div
       className="min-h-screen hero"
