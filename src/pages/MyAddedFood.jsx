@@ -6,7 +6,7 @@ const MyAddedFood = () => {
   const { user } = useContext(AuthContext);
   const [myAddedFood, setMyAddedFood] = useState([]);
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/myfood/${user?.email}`)
+    fetch(`${import.meta.env.VITE_API_URL}/myfood/${user?.email}`,{credentials:'include'})
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
