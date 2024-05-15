@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <Gallery></Gallery>,
-        // element:<GalleryPage></GalleryPage>
+        loader:()=>fetch("http://localhost:5000/feedback")
       },
       {
         path: "/details/:id",
