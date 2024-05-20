@@ -25,7 +25,7 @@ const MyPurchase = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/purchase/${id}`, {
+        fetch(`${import.meta.env.VITE_API_URL}/purchase/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

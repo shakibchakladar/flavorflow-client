@@ -12,7 +12,7 @@ const Gallery = () => {
   }, []);
 
   const fetchFeedback = () => {
-    fetch("http://localhost:5000/feedback")
+    fetch(`${import.meta.env.VITE_API_URL}/feedback`)
       .then((res) => res.json())
       .then((data) => {
         setFeedback(data);
@@ -33,7 +33,7 @@ const Gallery = () => {
       feedback: feedbackText,
     };
 
-    fetch("http://localhost:5000/feedback", {
+    fetch(`${import.meta.env.VITE_API_URL}/feedback`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
