@@ -13,6 +13,7 @@ import AddFood from "../pages/AddFood";
 import MyAddedFood from "../pages/MyAddedFood";
 // import GalleryPage from "../pages/GalleryPage";
 import Gallery from "../pages/Gallery";
+import SingleTopFoods from "../pages/SingleTopFoods";
 // import PrivateRoutes from "../components/PrivateRoutes";
 // import FoodDetails from "../pages/FoodDetails";
 
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <FoodDetails></FoodDetails>,
+      },
+      {
+        path:'/topfood/:id',
+        element:<SingleTopFoods></SingleTopFoods>
+
       },
       {
         path: "/checkout/:id",
