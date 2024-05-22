@@ -10,18 +10,22 @@ const AllFood = () => {
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_API_URL}/foods`)
-      .then((res) =>{ 
-        setFoods(res.data)
-        setRecods(res.data)
+      .then((res) => {
+        setFoods(res.data);
+        setRecods(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
   const Filter = (event) => {
-    setRecods(foods.filter(f => f?.name.toLowerCase().includes(event.target.value.toLowerCase())));
+    setRecods(
+      foods.filter((f) =>
+        f?.name.toLowerCase().includes(event.target.value.toLowerCase())
+      )
+    );
   };
-  
+
   return (
     <div className="pt-10">
       <div>
@@ -73,7 +77,7 @@ const AllFood = () => {
       </div>
       <div className="p-10 m-2 text-center">
         <input
-        onChange={Filter}
+          onChange={Filter}
           type="text"
           placeholder="search here"
           className="w-full max-w-xs input input-bordered input-primary"

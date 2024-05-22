@@ -1,6 +1,15 @@
+import { Link } from "react-router-dom";
+
 const WhySpecial = () => {
   return (
-    <div>
+    <div className="text-center">
+      <div className="p-10 m-2">
+        <Link to="/allfood">
+          <button className="border-2 border-orange-400 btn btn-outline">
+            see all
+          </button>
+        </Link>
+      </div>
       <div className="p-5 m-5 space-y-5 text-center my-7">
         <h2 className="text-5xl font-bold font-poppins ">Why is it special?</h2>
         <p>
@@ -19,12 +28,14 @@ const WhySpecial = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <h1 className="text-3xl font-bold font-poppins text-[#FA7F08]">What We offer</h1>
+            <h1 className="text-3xl font-bold font-poppins text-[#FA7F08]">
+              What We offer
+            </h1>
             <p className="md:p-5">
               At FlavorFlow, we understand that dining is more than just a meal;
               its an experience. As your premier destination for culinary
               excellence, we pride ourselves on offering more than just
-              delicious food  we offer a symphony of flavors, ambiance, and
+              delicious food we offer a symphony of flavors, ambiance, and
               service that elevate every dining occasion. Our commitment to
               quality is unwavering, reflected in every aspect of our menu, from
               the freshest ingredients to the innovative presentation of each
