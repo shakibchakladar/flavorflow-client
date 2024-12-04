@@ -9,7 +9,8 @@ const FoodDetails = () => {
   const [food, setFood] = useState({});
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/singleFood/${id}`)
+    // fetch(`${import.meta.env.VITE_API_URL}/singleFood/${id}`)
+    fetch(`http://localhost:5000/propertyDetails/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setFood(data);
